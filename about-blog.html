@@ -1,0 +1,16 @@
+---
+layout: page
+title: About my Blog
+---
+<p>My blog is irregularly updated and will mostly cover technology related items of interest
+to me.  This is not to say that something else will never appear, but those posts should
+be in the minority.</p>
+
+<p>Index of blog posts:</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
